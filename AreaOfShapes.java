@@ -14,6 +14,7 @@ import java.util.Scanner;
           // displaying the menu
           System.out.println("1: Right Angle Triangle");
           System.out.println("2: Area of Square");
+         System.out.println("3: Area of Rectangle");
     System.out.print("Make your choice: ");  
              ch = sc.nextInt(); // reading user's choice
               switch (ch)
@@ -32,6 +33,15 @@ import java.util.Scanner;
                  side = sc.nextInt();
                  ar = side * side;
                  System.out.println("Area of the Square is "+ ar + "\n\n");
+                 break;
+        
+                 case 3:
+                 System.out.print("Enter the length of a Rectangle \n");
+                 length = sc.nextInt();
+                 System.out.print("Enter the breadth of the Rectangle \n");
+                 breadth = sc.nextInt();
+                 ar = length * breadth;
+                 System.out.println("Area of the Rectangle is " + ar + "\n\n");
                  break;
         
                 default:
