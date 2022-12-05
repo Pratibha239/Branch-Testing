@@ -15,6 +15,7 @@ import java.util.Scanner;
           System.out.println("1: Right Angle Triangle");
           System.out.println("2: Area of Square");
          System.out.println("3: Area of Rectangle");
+         System.out.println("4: Area of Circle");
     System.out.print("Make your choice: ");  
              ch = sc.nextInt(); // reading user's choice
               switch (ch)
@@ -42,6 +43,13 @@ import java.util.Scanner;
                  breadth = sc.nextInt();
                  ar = length * breadth;
                  System.out.println("Area of the Rectangle is " + ar + "\n\n");
+                 break;
+
+                  case 4:
+                 System.out.print("Enter the radius of a Circle \n");
+                 radius = sc.nextInt();
+                 ar = radius * radius * 22 / 7;
+                 System.out.println("Area of the Circle is " + ar + "\n\n");
                  break;
         
                 default:
